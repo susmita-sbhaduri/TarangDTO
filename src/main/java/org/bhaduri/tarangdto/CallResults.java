@@ -11,19 +11,23 @@ import java.util.Date;
  * @author bhaduri
  */
 public class CallResults {
+    private String scripId;
     private String callVersionOne;
     private String callVersionTwo;
     private Double retraceVersionOne;
     private Double retraceVersionTwo;
     private Date callGenerationTimeStamp;
 
-    public CallResults(String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp) {
+    public CallResults(String scripId, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp) {
+        this.scripId = scripId;
         this.callVersionOne = callVersionOne;
         this.callVersionTwo = callVersionTwo;
         this.retraceVersionOne = retraceVersionOne;
         this.retraceVersionTwo = retraceVersionTwo;
         this.callGenerationTimeStamp = callGenerationTimeStamp;
     }
+
+
 
     public String getCallVersionOne() {
         return callVersionOne;
@@ -64,5 +68,14 @@ public class CallResults {
     public void setCallGenerationTimeStamp(Date callGenerationTimeStamp) {
         this.callGenerationTimeStamp = callGenerationTimeStamp;
     }
+
+    public String getScripId() {
+        return scripId;
+    }
+
+    public void setScripId(String scripId) {
+        this.scripId = scripId;
+    }
+    
     
 }

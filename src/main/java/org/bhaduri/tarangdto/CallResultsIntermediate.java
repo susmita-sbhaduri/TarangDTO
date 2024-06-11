@@ -16,18 +16,13 @@ public class CallResultsIntermediate extends CallResults{
 
     private List<LastTransactionPrice> intermediateLTPList;
 
-    public CallResultsIntermediate(List<LastTransactionPrice> intermediateLTPList, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp) {
-        super(callVersionOne, callVersionTwo, retraceVersionOne, retraceVersionTwo, callGenerationTimeStamp);
+    public CallResultsIntermediate(List<LastTransactionPrice> intermediateLTPList, String scripId, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp) {
+        super(scripId, callVersionOne, callVersionTwo, retraceVersionOne, retraceVersionTwo, callGenerationTimeStamp);
         this.intermediateLTPList = intermediateLTPList;
     }
 
-
- 
-
-
-
-    public CallResultsIntermediate(List<LastTransactionPrice> intermediateLTPList, Date callGenerationTimeStamp) {
-        super("", "", 0.0, 0.0, callGenerationTimeStamp);
+    public CallResultsIntermediate(String scripId, List<LastTransactionPrice> intermediateLTPList, Date callGenerationTimeStamp) {
+        super(scripId,"", "", 0.0, 0.0, callGenerationTimeStamp);
         this.intermediateLTPList = intermediateLTPList;
     }
 
