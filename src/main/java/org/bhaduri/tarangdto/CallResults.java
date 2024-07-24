@@ -17,14 +17,16 @@ public class CallResults {
     private Double retraceVersionOne;
     private Double retraceVersionTwo;
     private Date callGenerationTimeStamp;
+    private Double callGenerationPrice;
 
-    public CallResults(String scripId, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp) {
+    public CallResults(String scripId, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp,Double callGenerationPrice) {
         this.scripId = scripId;
         this.callVersionOne = callVersionOne;
         this.callVersionTwo = callVersionTwo;
         this.retraceVersionOne = retraceVersionOne;
         this.retraceVersionTwo = retraceVersionTwo;
         this.callGenerationTimeStamp = callGenerationTimeStamp;
+        this.callGenerationPrice = callGenerationPrice;
     }
 
 
@@ -75,6 +77,14 @@ public class CallResults {
 
     public void setScripId(String scripId) {
         this.scripId = scripId;
+    }
+
+    public Double getCallGenerationPrice() {
+        return callGenerationPrice;
+    }
+
+    public void setCallGenerationPrice(Double callGenerationPrice) {
+        this.callGenerationPrice = callGenerationPrice;
     }
     
     
