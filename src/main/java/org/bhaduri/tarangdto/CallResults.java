@@ -14,6 +14,7 @@ public class CallResults {
     private String scripId;
     private String callVersionOne;
     private String callVersionTwo;
+    private String callVersionThree;    
     private Double retraceVersionOne;
     private Double retraceVersionTwo;
     private Date callGenerationTimeStamp;
@@ -47,6 +48,14 @@ public class CallResults {
         this.callVersionTwo = callVersionTwo;
     }
 
+    public String getCallVersionThree() {
+        return callVersionThree;
+    }
+
+    public void setCallVersionThree(String callVersionThree) {
+        this.callVersionThree = callVersionThree;
+    }
+    
     public Double getRetraceVersionOne() {
         return retraceVersionOne;
     }
