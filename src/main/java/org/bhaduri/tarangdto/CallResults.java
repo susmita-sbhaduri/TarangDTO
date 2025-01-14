@@ -20,10 +20,11 @@ public class CallResults {
     private Date callGenerationTimeStamp;
     private Double callGenerationPrice;
 
-    public CallResults(String scripId, String callVersionOne, String callVersionTwo, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp,Double callGenerationPrice) {
+    public CallResults(String scripId, String callVersionOne, String callVersionTwo, String callVersionThree, Double retraceVersionOne, Double retraceVersionTwo, Date callGenerationTimeStamp,Double callGenerationPrice) {
         this.scripId = scripId;
         this.callVersionOne = callVersionOne;
         this.callVersionTwo = callVersionTwo;
+        this.callVersionThree = callVersionThree;
         this.retraceVersionOne = retraceVersionOne;
         this.retraceVersionTwo = retraceVersionTwo;
         this.callGenerationTimeStamp = callGenerationTimeStamp;
